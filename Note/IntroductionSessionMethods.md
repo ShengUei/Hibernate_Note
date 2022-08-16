@@ -34,6 +34,8 @@ session.persist(person);
 - Update
   - it acts upon a passed object (its return type is void). The update method transitions the passed object from a detached to persistent state.
   - this method throws an exception if we pass it a transient entity.
+  
+**The method name update is a bit misleading here. It does not mean that an SQL UPDATE is immediately performed.**
 
 
 
