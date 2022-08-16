@@ -8,7 +8,7 @@ Any entity instance in our application appears in one of the three main states i
 
 When the entity instance is in the persistent state, all the changes that we make to the mapped fields of this instance will be applied to the corresponding database records and fields upon flushing the Session. The persistent instance is “online,” whereas the detached instance is “offline” and not monitored for changes.
 
-<mark style="color:blue">This means that when we change the fields of a persistent object, we don't have to call save, update, or any of those methods to get these changes to the database. All we need to do is commit the transaction, flush the session, or close the session.</mark>
+**This means that when we change the fields of a persistent object, we don't have to call save, update, or any of those methods to get these changes to the database. All we need to do is commit the transaction, flush the session, or close the session.**
 
 ![Simplified State Diagram](https://www.baeldung.com/wp-content/uploads/2016/07/2016-07-11_13-38-11-1024x551.png)
 
